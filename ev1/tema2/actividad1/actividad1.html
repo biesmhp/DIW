@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad1-DAW226</title>
+    <style type="text/css">
+      /* Todos los elementos de la pagina */
+      *{
+        font: 1em/1.3 Arial, Helvetica, sans-serif;
+      }
+      /* Todos los parrafos de la pagina */
+      p {
+        color: #555;
+      }
+      /* Todos los párrafos contenidos en el primero (1 párrafo)*/
+      p.primero{
+        color: #336699;
+      }
+      /* Todos los enlaces de la pagina */
+      a {
+        color: #CC3300;
+      }
+      /* Los elementos <em> contenidos en el primero (1 párrafo, ya que el resto de <em> son de clase especial y se sobreescribe)*/
+      p em {
+        background: #FFFFCC;
+        padding: .1em;
+      }
+      /* Todos los elementos <em> de clase "especial" en toda la página (2 párrafo y 3 párrafo) */
+      em.especial {
+        background: #FFCC99;
+        border: 1px solid #FF9900;
+        padding: .1em; }
+      /* Elementos <span> contenidos en .normal (3 párrafo)*/
+      .normal span{
+        font-weight: bold;
+      }
+      /* He añadido este estilo para el footer donde añado mi nombre (footer)*/
+      footer small {
+        font-size: 11px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Necesita la clase "primero" para distinguirse de los demás y heredar sus propios estilos -->
+    <p class="primero">
+      Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse <em>cillum dolore eu fugiat nulla pariatur</em>.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <!-- Este segundo párrafo tiene una clase normal para cumplir la condición del <span> como lo pide el ejercicio -->
+    <p class="normal">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod <a href="#">tempor incididunt</a> ut labore <span>et dolore magna aliqua</span>.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis <a href="#">ute irure dolor in reprehenderit</a> in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <!-- Este tercer párrafo contiene un span que no hace nada, porque no está dentro de una clase "normal" -->
+    <p>
+      Lorem ipsum <em class="especial">dolor sit amet</em>, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim <span>ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod <em class="especial">tempor incididunt</em> ut labore et dolore magna aliqua.
+      Duis aute irure dolor in reprehenderit <a href="#">in voluptate velit</a> esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <!-- Mi nombre e identificador :D -->
+    <footer><small>Brendan, DAW226</small></footer>
+  </body>
+</html>
