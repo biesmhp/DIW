@@ -3,27 +3,107 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style type="css">
+    <style type="text/css">
       /*
       1.- Todos los elementos table tr th td
       border:1px solid #000; border-collapse:collapse; padding:5px
+      */
+      table, tr, th, td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      /*
       2.- los h1 con identificador titulo color teal
+      */
+      h1#titulo {
+        color: teal;
+      }
+      /*
       3.- los elementos strong de color rojo
+      */
+      strong {
+        color: red;
+      }
+      /*
       4.- todos los span de la clase destacado en color rojo
+      */
+      span.destacado {
+        color: red;
+      }
+      /*
       5.- todos los h2 con el identificador subtitulo de color azul
+      */
+      h2#subtitulo {
+        color: blue;
+      }
+      /*
       6.- todos los span de la clase especial de color purple
-      7.- todas las etiquetas a en color rojo
+      */
+      span.especial {
+        color: purple;
+      }
+      /*
+      7.- todas las etiquetas 'a' en color rojo
+      */
+      a {
+        color: red;
+      }
+      /*
       8.- todos los elementos em que estén en a de color azul
+      */
+      a em {
+        color: blue;
+      }
+      /*
       9.- todos los p que estén en div con identificador adiccional de color oliva
+      */
+      div#adicional p {
+        color: olive;
+      }
+      /*
       10.- todos los span con identificado especial y que esten en div con
       identificador adiccional color fuchsia
+      */
+      div#adicional span#especial {
+        color: fuchsia;
+      }
+      /*
       11.-todas las a contenidas en div con identificador adiccional de color verde
+      */
+      div#adicional a {
+        color: green;
+      }
+      /*
       12.- todas las etiquetas caption de color azul
+      */
+      caption {
+        color: blue;
+      }
+      /*
       13.- los td color verde
+      */
+      td {
+        color: green;
+      }
+      /*
       14.- los strong contenidos en td color naranja
+      */
+      td strong {
+        color: orange;
+      }
+      /*
       15.- los th rojos
+      */
+      th {
+        color: red;
+      }
+      /*
       16.- los th de clase especial color naranja
       */
+      th.especial {
+        color: orange;
+      }
     </style>
   </head>
   <body>
@@ -36,7 +116,7 @@
       sed arcu sagittis tristique.
     </p>
 
-    <h2 class="subtitulo">Aliquam tincidunt, sem eget volutpat porta</h2>
+    <h2 id="subtitulo">Aliquam tincidunt, sem eget volutpat porta</h2>
 
     <p>
       Vivamus velit dui, placerat vel, feugiat in, ornare et, urna. <a href="#">Aenean turpis metus,
