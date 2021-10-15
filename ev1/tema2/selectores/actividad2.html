@@ -24,7 +24,7 @@
         border-width:10px;
       }
       /*El párrafo cita*/
-      cite{
+      p.cita{
         border-bottom-style: none;
         border-top-style: solid;
         margin-bottom: 0px;
@@ -32,7 +32,7 @@
         text-align: justify;
       }
       /*El párrafo autor*/
-      .autor{
+      p.autor{
         border-bottom-style: solid;
         border-top-style: none;
         font-family: serif;
@@ -41,17 +41,17 @@
         text-align: center;
       }
       /*El párrafo del filósofo*/
-      cite.filosofo{
+      p.filosofo{
         background-color: #FFE5E9;
         border-color: #FFC0CB;
       }
       /*El párrafo del pintor*/
-      cite.pintor{
+      p.pintor{
         background-color: #A6EDDB;
         border-color: #00CC99;
       }
       /*El párrafo del escritor*/
-      cite.escritor{
+      p.escritor{
         background-color: #C2DAF3;
         border-color: #0066CC;
       }
@@ -62,16 +62,17 @@
       <strong>citas</strong>
     </header>
     <p>
-      <cite class="filosofo">La amistad es un contrato por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</cite>
-      <span class="autor">Barón</span>
+      <p class="cita filosofo">La amistad es un <a href="#">contrato</a> por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</p>
+      <p class="autor filosofo">Baron</p>
     </p>
     <p>
-      <cite class="pintor">La amistad es un contrato por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</cite>
-
+      <p class="cita pintor">La amistad es un contrato por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</cite>
+      <p class="autor pintor">Eduard</p>
     </p>
     <p>
-      <cite class="escritor">La amistad es un contrato por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</cite>
-
+      <p class="cita escritor">La amistad es un contrato por el cual nos obligamos ha hacer pequeños favores a los demás para que los demás nos los hagan grandes.</cite>
+      <p class="autor escritor">Antonio</p>
     </p>
+    <footer><small>Brendan - DAW226</small></footer>
   </body>
 </html>
