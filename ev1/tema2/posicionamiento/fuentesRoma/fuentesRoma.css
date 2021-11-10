@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+  color: rebeccapurple;
+  text-align: justify;
+}
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-color: sandybrown;
+}
+.nombre {
+  font-style: italic;
+  font-weight: bold;
+  background-color: bisque;
+}
+.parrafoSangrado {
+  padding-left: 100px;
+}
+.imgLeft {
+  float: left;
+}
+.imgRight {
+  float: right;
+}
+hr {
+  clear: both;
+  color: rebeccapurple;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
