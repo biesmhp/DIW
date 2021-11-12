@@ -1,0 +1,92 @@
+#body{
+  /*define el identificador body asociado a un elemento <div>. Es la posición del
+  cuerpo de la página */
+  margin: auto auto 10px auto; /*top right bottom left equivale a poner un sólo auto*/
+  width: 710px;
+}
+#header{
+  /* Define un identificador header asociado a un elemento <div>. Es la posición
+  de la cabecera*/
+  margin: 10px auto 10px auto;
+  width: 710px;
+  /* EJERCICIO 1 */
+  /* He subdividido el atributo border en sus diferentes partes para hacerlo más visual */
+  border-style: solid;
+  border-color: #00c;
+  border-radius: 10px;
+  border-width: 3px;
+  /* RESTAURANTE 2 */
+  overflow: hidden;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#sidebar{
+  display: none;
+  border: solid 1px #ccc;
+
+}
+#footer {
+  /* EJERCICIO 3 */
+  float: left;
+  width: 710px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #0c0;
+  border-radius: 50px;
+  border-width: 3px;
+}
+body.main-sidebar #main, body.sidebar-main #main{
+  width: 490px;
+  /* EJERCICIO 2 */
+  padding-left: 15px;
+}
+body.main-sidebar #sidebar, body.sidebar-main #sidebar{
+  display: block;
+  width: 200px;
+  border: solid 1px #ccc;
+}
+body.main-sidebar #main, body.main-sidebar #sidebar{
+  /* Coloca el sidebar a la dcha.
+  Y el main a la izq.*/
+  float: left;
+  /* EJERCICIO 2 */
+  border: dotted 1px #0c0;
+}
+body.sidebar-main #main, body.sidebar-main #sidebar{
+  /* Coloca el sidebar a la izq. Y
+  el main a la dcha. */
+  float: right;
+  /* EJERCICIO 2 */
+  border: dotted 1px #0c0;
+}
+/* RESTAURANTE 2 */
+.logo {
+  /* float: left; */
+  float: left;
+  border: dotted 1px green;
+}
+.titulo {
+  /* color: #c00; */
+  float: left;
+  border: dotted 1px blue;
+  width: 500px;
+  margin: 0px;
+  padding: 25px 25px 25px 0px;
+}
+.lista li {
+  clear: both;
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+}
+.lista a {
+  text-decoration: none;
+  color: inherit;
+  background-color: saddlebrown;
+}
+.lista a:focus {
+  background-color: aqua;
+}
+.lista a:hover {
+  background-color: darkgreen;
+}
