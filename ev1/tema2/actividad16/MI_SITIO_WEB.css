@@ -1,0 +1,180 @@
+body {
+  
+}
+
+a {
+  
+}
+a:hover {
+  
+}
+
+p {
+  
+}
+
+.clear {
+  
+}
+
+h1, h2, h3, h4, h5 {
+  
+}
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+ul, ol {
+ 
+}
+
+#contenedor {
+  
+}
+#cabecera {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#contenido {
+  
+}
+
+#contenido #principal {
+  
+}
+#contenido #secundario {
+  
+  padding: 0;
+  
+
+}
+#pie {
+  
+}
+
+
+/* ---- Cabecera ----------------------------------------------------------- */
+#cabecera #logo {
+  
+  
+}
+
+#cabecera #logo a {
+  color: #FFF;
+  display: block;
+  line-height: 35px;
+}
+
+#cabecera #logo a:hover {
+  
+}
+
+#cabecera #buscador {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+#cabecera #buscador legend {
+  display: none;
+}
+
+#cabecera #buscador fieldset {
+  border: none;
+}
+
+
+
+
+
+
+
+#menu {
+  
+  margin: 0 5px;
+  padding: 10px 0 0 0;
+}
+
+#menu ul {
+  margin: 0 10px;
+  padding: 0;
+  list-style:none;
+}
+
+#menu ul li {
+  margin: 0 5px 0 0;
+  padding: 0;
+ 
+}
+
+#menu ul li a {
+  display: block;
+  position: relative;
+  padding: 5px 15px;
+  border: 0;
+  text-decoration: none;
+  
+}
+
+#menu ul li a:hover {
+  
+}
+
+#menu ul li.seleccionado a {
+  
+}
+
+
+#contenido .articulo {
+  
+  margin: 0;
+  padding: 20px;
+  
+}
+
+#contenido .articulo h2 {
+  margin: 0 -20px;
+  padding: 10px;
+  
+}
+
+#contenido .info {
+  margin: 10px 0;
+  padding-bottom: 8px;
+    
+}
+
+#contenido #secundario ul {
+  margin: 15px 0;
+  padding: 0;
+  list-style:none;
+}
+#contenido #secundario li a {
+  display: block;
+  padding: 3px 0 3px 22px;
+  text-decoration: none;
+}
+
+
+#contenido #secundario h3 {
+  padding: 10px 0 10px 10px;
+  margin-top: 20px;
+  
+}
+
+#pie p {
+  
+ 
+  
+}
