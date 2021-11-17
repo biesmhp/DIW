@@ -1,73 +1,112 @@
+:root{
+  --text-primary: #192666;
+}
 body {
-  
+  background-color: #F2F5FE;
+  background-image: url(./fondo.gif);
+  background-repeat: no-repeat;
+  font: 70%/160% "verdana";
+  color: var(--text-primary);
 }
 
 a {
-  
+  color: var(--text-primary);
 }
 a:hover {
-  
+  color: #4F6AD7;
 }
 
 p {
-  
+  margin: 1em 0px 1em 0px;
+  padding: 0px;
 }
 
 .clear {
-  
+  clear: both;
 }
 
 h1, h2, h3, h4, h5 {
-  
+  margin: 1em 0px 1em 0px;
+  padding: 0px;
 }
 
 h1 {
-  
+  font-size: 260%;
+  font: 'Georgia';
+  font-family: serif;
+  font-weight: normal;
 }
 
 h2 {
-  
+  font-size: 180%;
+  font: 'Georgia';
+  font-family: serif;
+  font-weight: normal;
 }
 
 h3 {
-  
+  font-size: 120%;
+  font-weight: bold;
 }
 
 ul, ol {
- 
+  margin: 1em 0px 1em 2em;
+  padding: 0px;
 }
 
 #contenedor {
-  
+  width: 770px;
+  margin: 50px auto;
 }
 #cabecera {
   margin: 0;
   padding: 0;
-  
+  width: 770px;
+  height: 100px;
+  background-color: #233C9B;
+  background-image: url(./cabecera.jpg);
+  color: white;
 }
 
 #contenido {
-  
+  margin: auto 5px auto 5px;
+  width: auto;
+  background-color: white;
 }
 
 #contenido #principal {
-  
+  float: left;
+  /* He tenido que ampliar el ancho para que coincida con la imagen */
+  /* width: 350px; */
+  width: 530px;
+  margin-top: 15px;
+  padding-left: 20px;
+  background-color: white;
 }
 #contenido #secundario {
-  
+  float: left;
   padding: 0;
-  
-
+  width: 200px;
+  /* He tenido que alterar los margenes para que coincida con el contenido principal */
+  margin-top: 15px;
+  margin-left: 0px;
+  background-color: #CEDBF9;
+  background-image: url(./fondo_columna.gif);
+  background-repeat: no-repeat;
 }
 #pie {
-  
+  height: 60px;
+  /* He tenido que suprimir el margin para que se una */
+  margin-top: 0px;
+  color: #6685CC;
+  background-image: url(./fondo_pie.jpg);
 }
 
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  
-  
+  float: left;
+  margin-left: 50px;
 }
 
 #cabecera #logo a {
@@ -77,13 +116,15 @@ ul, ol {
 }
 
 #cabecera #logo a:hover {
-  
+  color: #B5C4E3;
 }
 
 #cabecera #buscador {
-  position: absolute;
+  position: relative;
   top: 40px;
   right: 20px;
+  float: left;
+  margin-left: 100px;
 }
 
 #cabecera #buscador legend {
@@ -101,9 +142,10 @@ ul, ol {
 
 
 #menu {
-  
+  background-color: var(--text-primary);
   margin: 0 5px;
   padding: 10px 0 0 0;
+  font-weight: bold;
 }
 
 #menu ul {
@@ -115,7 +157,7 @@ ul, ol {
 #menu ul li {
   margin: 0 5px 0 0;
   padding: 0;
- 
+  display: inline-flex;
 }
 
 #menu ul li a {
@@ -124,35 +166,39 @@ ul, ol {
   padding: 5px 15px;
   border: 0;
   text-decoration: none;
-  
+  cursor: pointer;
+  background-color: #253575;
+  color: #B5C4E3;
 }
 
 #menu ul li a:hover {
-  
+  background-color: #31479B;
 }
 
 #menu ul li.seleccionado a {
-  
+  background-color: #FFF;
+  color: #FF9000;
 }
 
 
 #contenido .articulo {
-  
+  background-image: url(./fondo_articulo.jpg);
   margin: 0;
   padding: 20px;
-  
+
 }
 
 #contenido .articulo h2 {
   margin: 0 -20px;
   padding: 10px;
-  
+  color: var(--text-primary);
+  background-color: #DEE5FD;
 }
 
 #contenido .info {
   margin: 10px 0;
   padding-bottom: 8px;
-    
+  border-bottom: 1px #DEE5FD;
 }
 
 #contenido #secundario ul {
@@ -164,17 +210,19 @@ ul, ol {
   display: block;
   padding: 3px 0 3px 22px;
   text-decoration: none;
+
 }
 
 
 #contenido #secundario h3 {
   padding: 10px 0 10px 10px;
   margin-top: 20px;
-  
+  background-color: #A0B9F3;
+  color: var(--text-primary);
 }
 
 #pie p {
-  
- 
-  
+  clear: both;
+  position: absolute;
+  z-index: 1;
 }
