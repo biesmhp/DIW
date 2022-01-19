@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#derecha").click(function() {
+          $("div").fadeToggle(500);
+        });
+      });
+    </script>
+    <style media="screen">
+      div {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" id="derecha">pulsa</button>
+    <!-- <input type="button" class="derecha"/> -->
+    <div>prueba</div>
+  </body>
+</html>

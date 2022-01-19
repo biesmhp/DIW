@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+	<head>
+
+		<title>Ejemplo de animaci�n con Show() y Hide()</title>
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		var ocultar=function () { $(this).prev().hide("fast", ocultar); }
+		$(document).ready(function() {
+			$("#hidr").click(function () {
+      			$("span").hide(3000, ocultar);
+    		});
+  			$("#showr").click(function () {
+			    $("span").show(500);
+		    });
+			$("#fin").click(function () {
+			    $("span").fadeIn("slow");
+		    });
+			$("#fout").click(function () {
+			    $("span").fadeOut(500);
+		    });$("#ftoggle").click(function () {
+			    $("span").fadeToggle(500);
+		    });
+			$("#fto").click(function () {
+			    $("span").fadeTo(500, 0);
+		    });
+			$("#sdown").click(function () {
+			    $("span").slideDown(1000);
+		    });
+			$("#sup").click(function () {
+			    $("span").slideUp(1000);
+		    });
+			$("#stoggle").click(function () {
+			    $("span").slideToggle(1000);
+		    });
+
+		});
+
+		</script>
+		<style media="screen">
+		body { background: #666; }
+		span { background:#def3ca; padding:3px; float:left; }
+		</style>
+
+	</head>
+	<body>
+		<button id="hidr">Ocultar</button>
+		<button id="showr">Mostrar</button>
+		<button id="fin">FadeIn</button>
+		<button id="fout">FadeOut</button>
+		<button id="ftoggle">FadeToggle</button>
+		<button id="fto">FadeTo</button>
+		<button id="sdown">SlideDown</button>
+		<button id="sup">SlideUp</button>
+		<button id="stoggle">SlideToggle</button>
+		<div>
+			<span>Hab�a</span>
+			<span>una </span>
+			<span>vez</span>
+		    <span>un</span>
+			<span>desarrollador </span>
+			<span>Web</span>
+		    <span>...</span>
+
+  		</div>
+	</body>
+</html>
