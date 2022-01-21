@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function functionName() {
+        $("#contenedorColores").delay(1000).fadeOut("slow",function () {
+          $(".rojo").css("backgroundColor","red");
+          $(".verde").css("backgroundColor","green");
+        }).delay(1000).fadeIn("slow");
+      });
+    </script>
+    <style media="screen">
+      body {
+        background-color: dimgray;
+      }
+      h1 {
+        color: yellow;
+      }
+      .azul {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <div id="contenedorColores">
+      <div class="azul">
+        azul
+      </div>
+      <div class="rojo">
+        rojo
+      </div>
+      <div class="verde">
+        verde
+      </div>
+    </div>
+  </body>
+</html>
