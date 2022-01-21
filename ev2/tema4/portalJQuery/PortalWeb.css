@@ -107,7 +107,7 @@ div.menu a:hover
 {
 	/* Extra */
 	font-size: 20px;
-	color: yellow;
+	background-color: yellow;
 	border-color: black;
 	border-style: solid;
 }
