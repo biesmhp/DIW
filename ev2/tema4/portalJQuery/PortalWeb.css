@@ -1,0 +1,113 @@
+body
+{
+	/* Extra */
+	background-color: pink;
+	color: red;
+	font-size: 13px;
+	font-family: Arial;
+}
+div#cabecera
+{
+	width:900px;
+	height:100px;
+	margin-top:0px;
+	margin-bottom:0px;
+	background-repeat:repeat-x;
+	/* Extra */
+	color: white;
+	background-image: url('./img01.gif');
+}
+div#menu
+{
+	margin-left:520px;
+}
+div#menu a
+{
+	text-decoration:none;
+	padding-right:10px;
+	/* Extra */
+	color: green;
+}
+div#contenido
+{
+	width:900px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-left:15px;
+}
+div#cuerpo
+{
+	width:570px;
+	padding-left:10px;
+
+	/* Flotar derecha */
+	float: right;
+}
+div#izquierda
+{
+	border:solid #a32626 1px;
+	width:300px;
+	padding-left:10px;
+	padding-top:10px;
+	/* Extra */
+	float: left;
+	background-color: white;
+}
+div#pie
+{
+	width:900px;
+	height:50px;
+	margin-bottom:30px;
+	/* Extra */
+	clear: both;
+	background-image: url('./img06.gif');
+	color: green;
+	text-align: center;
+}
+div#pie a
+{
+	/* Extra */
+	color: blue;
+}
+h1
+{
+	/* Extra */
+	font-size: 36px;
+}
+#subtitulo
+{
+	font-weight:bold;
+	font-size:20px;
+}
+#destacado
+{
+	/* Extra */
+	font-weight: bold;
+	font-size: 20px;
+}
+#autor
+{
+	font-size:9px;
+}
+#enlaces
+{
+	font-weight:bold;
+}
+#enlaces a
+{
+	color:blue;
+}
+#listaenlaces a
+{
+	color:blue;
+}
+div.menu a:hover
+{
+	/* Extra */
+	font-size: 20px;
+	color: yellow;
+	border-color: black;
+	border-style: solid;
+}

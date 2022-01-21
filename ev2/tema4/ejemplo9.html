@@ -7,19 +7,48 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $("#derecha").click(function() {
-          $("div").fadeToggle(500);
+          $(".activaDesactiva").fadeToggle(500);
+        });
+
+        // Botón color
+        $(".btnColor").click(function() {
+          $(".rojo").css("background-color", "red");
+          $(".verde").css("background-color", "green");
+          $(".azul").css("background-color", "blue");
+
+          $(this).css("background-color", "white");
         });
       });
     </script>
     <style media="screen">
-      div {
+      body {
+        background-color: gray;
+      }
+      .rojo {
         background: red;
+        height: 20px;
+        width: 50px;
+      }
+      .verde {
+        background: green;
+        height: 20px;
+        width: 50px;
+      }
+      .azul {
+        background: blue;
+        height: 20px;
+        width: 50px;
       }
     </style>
   </head>
   <body>
-    <button type="button" id="derecha">pulsa</button>
-    <!-- <input type="button" class="derecha"/> -->
-    <div>prueba</div>
+    <!-- <button type="button" id="derecha">pulsa</button>
+    <div id="activaDesactiva">prueba</div> -->
+
+    <div id="contenedorColores">
+      <div class="btnColor rojo"></div>
+      <div class="btnColor verde"></div>
+      <div class="btnColor azul"></div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,110 @@
+
+<!-- saved from url=(0054)file:///C:/Users/pgonzalez/Downloads/examen%20(3).html -->
+<html>
+	<head>
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> -->
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+				// Los h2 desaparecen y aparecen al cargar la web
+				$("h2").fadeOut("slow").delay(1000).fadeIn(800);
+				// Al pulsar el logo oculta y reaparece la cabecera y el pie secuencialmente
+				$("#logo").click(function () {
+					$("#cabecera").fadeOut("fast").delay(9000).fadeIn("fast");
+					$("#pie").delay(3000).fadeOut(3000).delay(6000).fadeIn("fast");
+				});
+				// Al pasar el ratón por el logo cambia su color y tamaño
+				$("#logo").mouseover(function () {
+					$("#logo>h1").css({"color": "yellow", "font-size": "45px"});
+				});
+				// Al pulsar en enlaces se ocultará el menú izquierdo en 3s
+				$("#izquierda").click(function () {
+					$(this).fadeOut(3000);
+					$("#cuerpo").css("float","left"); // Mueve el cuerpo al espacio que ha quedado libre
+				});
+				// Al pasar el ratón por el cuerpo lo atenua
+				$("#cuerpo").mouseenter(function () {
+					$(this).fadeTo(3000, 0.3);
+				});
+				// Cuando pasas el ratón por el pie le cambie el color y tamaño
+				$("#pie").mouseover(function () {
+					$(this).css({"color": "yellow", "font-size": "20px"});
+				});
+			})
+		</script>
+		<link rel="stylesheet" href="PortalWeb.css">
+	</head>
+	<body>
+		<div id="cabecera">
+			<div id="logo">
+				<h1>Diseño Interfaces WEb</h1>
+			</div>
+			<div id="menu" class="menu">
+				<a href="#">Inicio</a>
+				<a href="#">Quiénes somos</a>
+				<a href="#">Productos</a>
+				<a href="#">Contacto</a>
+			</div>
+		</div>
+		<div id="contenido">
+			<div id="izquierda">
+				<form name="formulario">
+					<span id="subtitulo">Buscar:</span>
+					<br>
+					<input type="text" name="texto">
+					<input type="button" name="boton" value="Buscar">
+				</form>
+				<p id="subtitulo">Menú principal:</p>
+				<ul id="listaenlaces">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Quiénes somos</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+				<p id="subtitulo">Enlaces:</p>
+				<a href="https://www.twitter.com"><img src="twiter.jpg"></a>
+				<a href="https://www.w3schools.com/Css/"><img src="css.jpg"></a>
+			</div>
+			<div id="cuerpo">
+				<h2>Mumford And Sons, 'Babel'</h2>
+				<p id="autor">Autor: Xavi Sancho</p>
+				<p><span id="destacado">"Quieres odiarlo, pero es casi imposible lograrlo, porque su efecto es narcótico"
+				</span> Más que una banda, Mumford and Sons pueden parecer una metáfora de todo lo que va mal en el mundo.
+				 En otro contexto, podrían verse como otra banda tradicionalista más o menos regular.
+				 Otro combo británico que decidió abrazar las raíces yanquis con el fin de inyectarles eso que
+				 los de las islas hacen tan bien: el pop. No por nada los ingleses han logrado que su bandera sea
+				 un icono en habitaciones de adolescentes de todo el planeta, que un partido Inglaterra-Argentina,
+				 a pesar de casi siempre ser un soberano coñazo, sea recibido como un duelo en la cumbre...</p>
+				<p id="enlaces">
+					<a href="#">Comentarios</a>
+
+					<a href="#">Leer noticia completa &gt;&gt;</a>
+				</p>
+				<br>
+				<h2>Cristóbal de Monroy. Bibliografía</h2>
+				<p id="autor">Autor: Manuel de Falla</p>
+				<p class="parrafo">
+					<ul>
+						<li>Javier Huerta, Emilio Peral, Héctor Urzaiz, Teatro español de la A a la Z, Madrid: Espasa-Calpe, 2005, p. 484-485.</li>
+						<li>Diccionario de Literatura española. Madrid: Revista de Occidente, 1964 (3.ª ed.)</li>
+						<li>Federico Carlos Sainz de Robles, Ensayo de un diccionario de la literatura, Madrid: Aguilar, 1973 (2.ª ed.), t. II, p. 808.</li>
+						<li>Cayetano Alberto de la Barrera y Leirado, Catálogo bibliográfico y biográfico del teatro antiguo español, desde sus orígenes hasta mediados del siglo XVIII (Madrid, 1860).</li>
+					</ul>
+				</p>
+				<p id="enlaces">
+					<a href="#">Comentarios</a>
+
+					<a href="#" class="leermas">Leer mas</a>
+				</p>
+			</div>
+		</div>
+		<div id="pie">
+			Realizado por                    - 2020
+			<br>
+			<a href="#">IES Miguel Herrero</a> TORRELAVEGA-Cantabria
+		</div>
+
+</body></html>
