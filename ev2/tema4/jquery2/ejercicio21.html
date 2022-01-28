@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnMostrar").click(function() {
+          var h = $(".cubo").height();
+          $(".cubo").text("Altura "+h);
+        })
+      });
+    </script>
+    <style media="screen">
+      div.cubo{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-style: solid;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 21</h1>
+    <button type="button" id="btnMostrar">Dimensiones</button>
+    <div class="cubo">
+
+    </div>
+  </body>
+</html>
