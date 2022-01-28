@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("p").mousedown(function(e){
+          //1: izquierda, 2: medio/ruleta, 3: derecho
+        	if(e.which == 3){
+            alert("Has pulsado el botón derecho");
+      		}
+      	});
+      });
+    </script>
+    <style media="screen">
+      /*Ejemplo*/
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 9</h1>
+    <small>Pulsa botón derecho sobre el párrafo</small>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </body>
+</html>
