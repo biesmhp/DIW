@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnBorrar").click(function() {
+          $(".cubo").remove();
+        })
+      });
+    </script>
+    <style media="screen">
+      div.cubo{
+        position: absolute;
+        height: 100px;
+        width: 300px;
+        border-style: solid;
+        background-color: yellow;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 25</h1>
+    <button type="button" id="btnBorrar">Borrar caja</button>
+    <div class="cubo">
+
+    </div>
+  </body>
+</html>

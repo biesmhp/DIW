@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnDar").click(function() {
+          $("#p1").addClass("coloritos");
+          $("#p2").addClass("grande");
+        })
+        $("#btnQuitar").click(function() {
+          $("#p1").removeClass("coloritos");
+          $("#p2").removeClass("grande");
+        })
+      });
+    </script>
+    <style media="screen">
+      .coloritos{
+        color: darkred;
+        font-style: italic;
+      }
+      .grande{
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 27</h1>
+    <button type="button" id="btnDar">Dar clase</button>
+    <button type="button" id="btnQuitar">Quitar clase</button>
+    <p id="p1">Párrafo sin clases. P1</p>
+    <p id="p2">Párrafo sin clases. P2</p>
+  </body>
+</html>

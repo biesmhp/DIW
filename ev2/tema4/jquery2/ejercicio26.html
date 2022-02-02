@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnBorrar").click(function() {
+          $(".italic").remove();
+        })
+      });
+    </script>
+    <style media="screen">
+      /*Ejemplo*/
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 26</h1>
+    <button type="button" id="btnBorrar">Borrar párrafo</button>
+    <p class="italic"><i>Párrafo Italic</i></p>
+    <p>Párrafo sin clase</p>
+  </body>
+</html>

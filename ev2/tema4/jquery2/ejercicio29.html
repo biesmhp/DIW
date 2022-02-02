@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnPrueba").on({
+          click: function() {
+            $(".p1").slideToggle();
+          },
+          mouseover: function() {
+            $(".p1").css("background-color","blue");
+          },
+          mouseout: function() {
+            $(".p1").css("background-color","red");
+          }
+        })
+      });
+    </script>
+    <style media="screen">
+      /*Ejemplo*/
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 29</h1>
+    <button type="button" id="btnPrueba">Prueba</button>
+    <p class="p1">Párrafo primero, de prueba</p>
+  </body>
+</html>

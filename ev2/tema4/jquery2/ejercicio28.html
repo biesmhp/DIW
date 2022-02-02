@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#btnColor").click(function() {
+          $("p").addClass("fondoAmarillo");
+        })
+      });
+    </script>
+    <style media="screen">
+      .pColor1{
+        background-color: steelblue;
+      }
+      .pColor2{
+        background-color: darkgoldenrod;
+      }
+      .pColor3{
+        background-color: cornflowerblue;
+      }
+      .pColor4{
+        background-color: darkseagreen;
+      }
+      .fondoAmarillo{
+        background-color: beige;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 28</h1>
+    <button type="button" id="btnColor">Cambiar color</button>
+    <p class="pColor1">Párrafo de color 1, primer párrafo.</p>
+    <p class="pColor2">Párrafo de color 2, segundo párrafo.</p>
+    <p class="pColor3">Párrafo de color 3, tercer párrafo.</p>
+    <p class="pColor4">Párrafo de color 4, cuarto párrafo.</p>
+  </body>
+</html>
