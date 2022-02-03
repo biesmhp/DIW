@@ -7,8 +7,12 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $("#btnStart").click(function() {
-          $(".cubo").fadeIn("fast");
+          $(".cubo").fadeIn("slow").animate({left:"200px"},2000).slideUp("slow");
+          $(".cubo").css("background-color","blue");
         })
+        $("#btnStop").click(function() {
+          $(".cubo").stop(true);
+        });
       });
     </script>
     <style media="screen">
