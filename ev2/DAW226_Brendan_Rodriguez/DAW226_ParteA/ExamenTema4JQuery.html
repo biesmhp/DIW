@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)file:///C:/Users/pgonzalez/Downloads/ExamenTema4JQuery.html -->
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head> -->
+<html lang="en" dir="ltr">
+<body class="sidebar-main">
+<head>
+<meta charset="utf-8">
+<title>Brendan - DAW226 - Parte A</title>
+<script type="text/javascript" src="./../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Ejercicio 1
+			// Al cargar la página estará vacía, tan solo se visualizará el borde marrón del #footer
+			$("#footer").children().hide();
+
+			// Ejercicio 2
+			// Dentro del #footer aparecen las distintas opciones, menos el texto
+			// He insertado las opciones en el HTML con sus IDs
+			// $("#footer").children().delay(1000).fadeIn("slow");
+			$("#cabe-cera").delay(1000).fadeIn("slow");
+			$("#me-nu").delay(1000).fadeIn("slow");
+			$("#cuer-po").delay(1000).fadeIn("slow");
+			$("#foo-ter").delay(1000).fadeIn("slow");
+
+			// Ejercicio 3
+			// Al pulsar una opción mostrará su correspondiente: encabezado, menú o cuerpo.
+			// He insertado los <img> en el HTML
+			$("#cabe-cera").click(function() {
+				$("#header").slideToggle("slow");
+			})
+			$("#me-nu").click(function() {
+				$("#sidebar").slideToggle("slow");
+			})
+			$("#cuer-po").click(function() {
+				$("#main").slideToggle("slow");
+			})
+			// Ejercicio 4
+			// Al pulsar de nuevo las opciones de nuevo, se ocultarán (se ha añadido al ejercicio 3, a modo de Toggle)
+			//
+
+			// Ejercicio 5
+			// El cuarto <div> hace desaparecer los otros 3 y así mismo, de forma secuencial y al final muestra un texto en su lugar
+			$("#foo-ter").click(function() {
+				$("#cabe-cera").fadeOut("slow");
+				$("#me-nu").delay(1000).fadeOut(500);
+				$("#cuer-po").delay(2000).fadeOut(500);
+				$("#foo-ter").delay(3000).fadeOut(500);
+				$("#texto-pie").delay(3500).fadeIn("slow");
+			})
+
+			// Ejercicio 6
+			// Al entrar en la #header o #sidebar el fondo se pone amarillo y la letra aumenta a 35px. Al salir se pone rosa y la letra a 15px
+			$("#header").on({
+				mouseenter: function() {
+					$("#header").css("background-color","yellow");
+					$("#header").css("font-size","35px");
+				},
+				mouseleave: function() {
+					$("#header").css("background-color","pink");
+					$("#header").css("font-size","15px");
+				}
+			})
+			$("#sidebar").on({
+				mouseenter: function() {
+					$("#sidebar").css("background-color","yellow");
+					$("#sidebar").css("font-size","35px");
+				},
+				mouseleave: function() {
+					$("#sidebar").css("background-color","pink");
+					$("#sidebar").css("font-size","15px");
+				}
+			})
+			// Cuando pase por el #main cambia su opacidad hasta casi desvanecerse
+			$("#main").mouseover(function() {
+				$("#main").fadeTo("slow",0.3);
+			})
+		});
+	</script>
+<style>
+	div#body
+	{
+		margin:auto auto auto auto;
+		width:710px;
+		clear:left;
+
+	}
+	div#header
+	{
+		margin:auto auto auto auto;
+		width:710px;
+		border:solid 3px #815608;
+		border-radius: 15px;
+		display:none;
+	}
+	div#sidebar
+	{
+		display:none;
+		border:solid 1px #CFC;
+		padding-left:15px;
+
+	}
+
+	body.sidebar-main div#footer
+	{
+		margin:25px auto 25px auto;
+		width:710px;
+		border:solid 3px #815608;
+		border-radius: 15px;
+		clear:right;
+
+	}
+	body.main-sidebar div#footer
+	{
+		margin:100px 100px 100px auto;
+		padding-left:200px;
+		width:710px;
+		border:solid 3px #815608;
+		border-radius: 15px;
+		clear:left;
+
+	}
+			/* // DEFINIMOS LOS ESTILOS PARA CADA UNO DE LOS 4 <DIV> LOS NOMBRES DE CADA UNO DE ELLOS SON ESTOS NO LOS CAMBI� */
+
+	div#cabe-cera {background-color:#aac; margin:auto 5px 5px 5px;  height:50px; width:23%; left:100px;display:inline-table;}
+	div#me-nu {background-color:#acc;	margin:auto 5px 5px 5px; height:50px; width:23%; left:150px; display:inline-table;}
+	div#foo-ter {background-color:#cbc;	 margin:auto 5px 5px 5px; height:50px; width:23%;  left:250px; display:inline-table;}
+	div#cuer-po {background-color:#ccc;	 margin:auto 5px 5px 5px; height:50px; width:23%;  left:350px;display:inline-table;}
+	div#texto-pie{font-family: Arial, Helvetica, sans-serif;color: #888888; display:none;}
+
+	body.main-sidebar div#main, body.sidebar-main div#main
+	{
+		width:490px;
+		border:solid 4px green;
+
+	}
+	body.main-sidebar div#body, body.sidebar-main div#body
+	{
+		margin:auto auto auto auto;
+		width:710px;
+		border:solid 4px #FFF;
+	}
+	body.main-sidebar div#sidebar, body.sidebar-main div#sidebar
+	{
+		padding-top:10px;
+		display:block;
+		width:200px;
+		border:solid 1px #CCC;
+
+	}
+	body.main-sidebar div#main, body.main-sidebar div#sidebar  /*Main-sidebar. Este estilo coloca el sidebar a la derecha y el main a la izquierda */
+	{
+		float:left;
+		border:dotted 1px green;
+
+	}
+	body.sidebar-main div#main, body.sidebar-main div#sidebar /*Sidebar-main. Este estilo coloca el sidebar a la izquierda y el main a la derecha*/
+	{
+		float:right;
+		border:dotted 1px green;
+		display:none;
+	}
+	div#header div#logo /*Se define el logo flotante a la izquierda*/
+	{
+		margin-bottom:inherit;
+		border:dotted 1px green;
+		float:left; /*Hago estas caja flotante, y las siguientes cajas que est�n en la misma posici�n tambi�n ser�m flotantes a la izquierda. No hace falta ponerle a div#header div#main-title tambi�n eta propiedad*/
+
+	}
+	div#header div#main-title /*Es el t�tulo del encabezado. Al ser el logo flotante este tambi�n lo ser� */
+	{
+		width:600px;
+		margin-bottom:inherit;
+		border:dotted 1px blue;
+		padding-bottom:10px;
+
+
+	/* DEFINE LOS ENLACES DE MEnU*/
+	}
+	a.menus:link
+	{text-decoration:none;
+		color:#000000;
+		background-color:#815608;
+		border:#FFFFFF 1px solid;
+	} /* Link no visitado*/
+
+	a.menus:visited {
+		text-decoration:none;
+		color:#cccccc;
+	} /*Link visitado*/
+
+	a.menus:active {
+		text-decoration:none;
+		color: #003399;
+		background: green;
+		border:#FFFFFF 1px solid;
+	} /*Link activo*/
+
+	a.menus:hover {
+		text-decoration:underline;
+		color: #003399;
+		background: red;
+		border:#FFFFFF 1px solid;
+	}
+	/*Rat�n sobre el link*/
+
+
+</style>
+</head>
+
+<body class="">
+<div id="header">
+	<div id="logo"><img src="logo.jpg" alt="Aqui va el logo"> </div>
+	<div id="main-title"><h1> El muslito </h1></div>
+	<p>&nbsp;</p>
+</div>
+
+<div id="body">
+	<div id="main"><img src="portada.png" alt="Aqui va la portada"></div>
+	<div id="sidebar">
+		<div><a href="#" class="menus">Inicio</a></div>
+		<div><a href="#" class="menus">¿Dónde Estamos?</a></div>
+		<div><a href="#" class="menus">Nuestra Carta</a></div>
+		<div><a href="#" class="menus">Horarios</a></div>
+	</div>
+</div>
+<div id="footer">
+	<div id="cabe-cera">
+		Cabecera
+	</div>
+	<div id="me-nu">
+		Menú
+	</div>
+	<div id="cuer-po">
+		Cuerpo
+	</div>
+	<div id="foo-ter">
+		FINALIZA
+	</div>
+	<div id="texto-pie">
+		Aquí va el identificador DAW226
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brendan - DAW226 - Parte B</title>
+    <script type="text/javascript" src="./../jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // Contenido
+        // Ejercicio 1
+        // Que aparezca la respuesta y desaparezca el texto
+        // $("#btnPulsar").click(function() {
+        //   $(".respuesta").fadeIn("fast");
+        //   $(".textoC").fadeOut("fast");
+        // })
+
+        // Ejercicio 2
+        // Al pulsar en la .respuesta se expandirá hacia la izquierda
+        $(".respuesta").click(function() {
+          // $(".respuesta").css("width","300px");
+          $(".respuesta").animate({
+            width: "1000px",
+          });
+        })
+        // Al volver a pulsar el botón #btnPulsar se mostrarán los .textoC de nuevo con fondo amarillo, y si le vuelvo a pulsar desaparecen (repetible)
+        // Debido a que este ejercicio se solapa con partes del ejercicio 1, y este es más completo, he absorbido su código
+        $("#btnPulsar").click(function() {
+          $(".respuesta").fadeIn("fast");
+          $(".textoC").fadeToggle("slow",function() {
+            $(".textoC").addClass("amarillento");
+          });
+        })
+      })
+    </script>
+    <style media="screen">
+      div.respuesta{
+        display: none;
+        position: relative;
+        float: right;
+        background-color: red;
+        font-family: font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+        width: 80px;
+        height: 100px;
+      }
+      .amarillento{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="textoC">Algo tendrás que estudiar...</h1>
+    <span class="textoC">Si el refrán quieres conocer</span>
+    <button type="button" id="btnPulsar">Pulsar para continuar</button>
+    <div class="respuesta">
+      Si DIW quieres aprobar
+    </div>
+  </body>
+</html>
