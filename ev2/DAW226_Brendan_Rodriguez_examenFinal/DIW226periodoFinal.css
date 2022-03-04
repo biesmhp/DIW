@@ -1,0 +1,59 @@
+/* Estilo global */
+html {
+  background-color: dodgerblue;
+}
+/* Estilo de: Capa contenido */
+div.contenido {
+  width: 600px;
+  height: 400px;
+  font-size: 3em;
+  background-color: ghostwhite;
+  color: cornflowerblue;
+  background-image: url('images.jfif');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Centrado */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Estilo general de las capas: izq_top, dcha_top, izq_down y dcha_down */
+div.interior {
+  width: 150px;
+  height: 150px;
+  font-size: 2.5em;
+  background-color: yellow;
+  color: black;
+  vertical-align: middle;
+}
+/* Estilos individuales de las capas: izq_top, dcha_top, izq_down y dcha_down */
+div.izq_top {
+  position: absolute;
+  top: -15%;
+  left: -15%;
+}
+div.dcha_top {
+  position: absolute;
+  top: -15%;
+  left: 90%;
+}
+div.izq_down {
+  position: absolute;
+  top: 90%;
+  left: -15%;
+}
+div.dcha_down {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+/* Estilo de los botones */
+button.botonico {
+  background-color: limegreen;
+  border-radius: 20%;
+  border-color: limegreen;
+  color: whitesmoke;
+  font-weight: bold;
+}
